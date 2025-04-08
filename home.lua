@@ -1,4 +1,4 @@
---[[pod_format="raw",created="2025-04-05 21:52:03",modified="2025-04-05 22:29:30",revision=21]]
+--[[pod_format="raw",created="2025-04-05 21:52:03",modified="2025-04-08 18:12:25",revision=22]]
 title = "Meivuu's Stuff"
 
 _init = function()
@@ -51,6 +51,10 @@ Windows.
 end
 
 function _update()
+	local w,h = page_size()
+	gui.width = w
+	gui.height = h
+	
 	gui:update_all()
 end
 
